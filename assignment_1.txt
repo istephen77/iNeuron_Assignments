@@ -1,0 +1,105 @@
+#STEP BY STEP PROCESS OF TABLE CREATION IS MENTIONED AND ANSWER TO THE QUERIES IS MENTIONED BELOW AS WELL.
+
+#To make directory in local
+cd mkdir /tmp/hive/assign_1
+
+#Dumped data into the local using the FileZilla
+
+#To make directory in HDFS
+hadoop fs -mkdir /tmp/hive/assign_1
+
+#Loading data from local to hdfs
+hadoop fs -put /tmp/hive/assign_1/sales_data_order.csv  /tmp/hive/assign_1
+
+#Creating internal table named 'sales_data_order_csv'
+
+create table sales_data_order_csv
+(
+order_no int,
+qty_ordered int,
+price decimal(5,2),
+orderlinenumber int,
+sales decimal(5,2),
+status varchar(100),
+qtr_id int,
+month int,
+year_id int,
+productline varchar(100),
+msrp int,
+productcode varchar(10),
+phone varchar(15),
+city varchar(40),
+state varchar(40),
+postalcode varchar(40),
+country varchar(40),
+territory varchar(30),
+conatactlastname varchar(30),
+contactfirstname varchar(40),
+dealsize varchar(20)
+)
+row format delimited 
+fields terminated by ',';
+
+
+#Load data into internal table
+load data inpath '/tmp/hive/assign_1' into table sales_data_order_csv;
+
+#Display data
+select * from sales_data_order_csv
+
+#Internal table to convert csv to orc files
+
+create table sales_data_order_orc
+(
+order_no int,
+qty_ordered int,
+price decimal(5,2),
+orderlinenumber int,
+sales decimal(5,2),
+status varchar(100),
+qtr_id int,
+month int,
+year_id int,
+productline varchar(100),
+msrp int,
+productcode varchar(10),
+phone varchar(15),
+city varchar(40),
+state varchar(40),
+postalcode varchar(40),
+country varchar(40),
+territory varchar(30),
+conatactlastname varchar(30),
+contactfirstname varchar(40),
+dealsize varchar(20)
+)
+stored as orc;
+
+#Load data from csv to orc
+from sales_data_order_csv insert overwrite table sales_data_order_orc select *;
+
+1) Calculate total sales per year
+select sum(sales), year_id from sales_data_order_orc group by year_id;
+
+2) Find a product for which maximum orders were placed
+select max(quantityordered), productline from sales_data_order_orc groupby productline orderby quantityordered desc limit 1;
+
+3) Calculate the total sales for each quarter
+select sum(sales), qtr_id from sales_data_order_orc groupby qtr_id;
+
+4) In which quarter sales was minimum
+select min(sales), qtr_id from sales_data_order_orc groupby qtr_id limit 1;
+
+5) In which country sales was maximum and in which country sales was minimum
+max sales : select max(sales), country from sales_data_order_orc groupby country orderby sales desc limit 1;
+min sales : select min(sales), country from sales_data_order_orc groupby country orderby sales limit 1;
+
+6) Calculate quartelry sales for each city
+select sales, qtr_id, city from sales_order_data_orc groupby qtr_id, city;
+
+7) Find a month for each year in which maximum number of quantities were sold
+select * from (max(quantityordered) , month, year_id, 
+row_number() over(partition by year_id order by month desc) as 'row_num' from ineuron_students)
+as test where `row_num`=1
+
+
