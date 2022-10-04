@@ -1,0 +1,167 @@
+-- iNeuron Technical Consultant Team's Hive Analysis
+
+-- Step 1 : Created local directory 
+mkdir /tmp/ineuron_consultant
+
+-- Step 2 : Dumped dataset into the local directory by using FileZilla
+
+-- Step 3: Create the hdfs directory
+hadoop fs -mkdir /tmp/ineuron_consultant
+
+-- Step 4 : Dump data from the local directory to hdfs
+hadoop fs -put /mkdir/ineuron_consultant_hive/AgentLogingReport.csv  /tmp/ineuron_consultant_hive
+hadoop fs -put /mkdir/ineuron_consultant_hive/AgenrPerformance.csv  /tmp/ineuron_consultant_hive
+
+
+-- Step 5 : Create a Database
+create database ineuron_consultant_db;
+
+-- Step 6 : Create Schema structure for AgentLogingReport
+create table agentlogingreport
+(
+sl_no int,
+agent_name string,
+date string,
+login_time string,
+logout_time string,
+duration string
+)
+row format delimited
+fields terminated by ',';
+
+-- Step 7 : Load data into the table
+load data inpath '/tmp/ineuron_consultant/AgentLoingReport.csv' into table AgentLogingReport;
+
+-- Step 8 : Create Schema structure for PerformanceReport;
+create table agentperformance
+(
+sl_no int,
+date string,
+agent_name string,
+total_chats int,
+avg_response_time string,
+avg_resolution_time string,
+avg_rating float,
+total_feedback int
+)
+row format delimited
+fields terminated by ',';
+
+-- Step 9 : Load data into the table
+load data inpath '/tmp/ineuron_consultant/PerformanceReport.csv' into table PerformanceReport;
+
+******************************************************(SOLUTIONS)****************************************************************
+
+1. List of all agents' names.
+ 
+select agent_name from PerformanceReport;
+
+2. Find out agent average rating.
+
+select avg(avg_rating) from PerformanceReport;
+
+
+3. Total working days for each agents 
+
+select agent_name, count(agent_name) as no_of_working_days from agentperformance group by agent_name;
+
+
+4. Total query that each agent have taken 
+
+select agent_name, sum(total_chats) from agentperformance group by agent_name;
+
+
+5. Total Feedback that each agent have received 
+
+select agent_name, sum(total_feedback) from agentperformance group by agent_name;
+
+
+6. Agent name who have average rating between 3.5 to 4 
+
+select agent_name, avg_rating from agentperformance where avg_rating between '3.5' and '4.0';
+
+
+7. Agent name who have rating less than 3.5 
+
+select agent_name, avg_rating from agentperformance where avg_rating < 3.5;
+
+
+8. Agent name who have rating more than 4.5 
+
+select agent_name, avg_rating from agentperformance where avg_rating > 4.5;
+
+
+9. How many feedback agents have received more than 4.5 average
+
+select agent_name, avg(total_feedback) from agentperformance group by agent_name having avg(total_feedback) > 4.5;
+
+
+10. average weekly response time for each agent 
+
+select * from agentperformance where week(response_time) as weekly_response_time;
+
+*11. average weekly resolution time for each agents 
+
+select * from agentperformance where week(resolution_time) as weekly_resolution_time;
+
+
+12. Find the number of chat on which they have received a feedback 
+
+select agent_name, sum(total_feedback) as feedback_received from agentperformance group by agent_name;
+
+
+*13. Total contribution hour for each and every agents weekly basis 
+
+select * from agentperformance where week(duration) as contributed_time;
+
+
+14. Perform inner join, left join and right join based on the agent column and after joining the table export that data into your local system.
+
+SET hive.auto.convert.join=true;
+SELECT * FROM agentperformance  a INNER JOIN agentlogingreport b ON a.agent_name = b.agent_name;
+
+SELECT * FROM agentperformance  a LEFT JOIN agentlogingreport b ON a.agent_name = b.agent_name;
+
+SELECT * FROM agentperformance  a RIGHT JOIN agentlogingreport b ON a.agent_name = b.agent_name;
+
+hadoop fs -cat hdfs://cloudera/user/hive/warehouse/ineuron_consultant_db/agentlogingreport/* > ~/output.csv
+
+
+15. Perform partitioning on top of the agent column and then on top of that perform bucketing for each partitioning.
+
+create table agentperformance_partitioning
+(
+sl_no int,
+agent_name string,
+total_chats string,
+avg_response_time string,
+avg_resolution_time string,
+avg_rating float,
+total_feedback int
+)
+partitioned by (date string);
+
+
+insert overwrite table agentperformance_partitioning partition(date) select sl_no, agent_name, total_chats, avg_response_time, avg_resolution_time, avg_rating, total_feedback, date from agentperformance;
+
+
+create table bucketing_agentperformance
+(
+sl_no int,
+agent_name string,
+date string,
+total_chats string,
+avg_response_time string,
+avg_resolution_time string,
+avg_rating float,
+total_feedback int
+)
+clustered by (date)
+sorted by (date)
+into 3 buckets;
+
+
+select * from bucketing_agentperformance;
+
+
+
