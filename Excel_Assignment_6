@@ -1,0 +1,60 @@
+1) What are the various elements of the Excel interface? Describe how
+they're used.
+Ans. The following are the basic parts of the Microsoft Excel Window:
+	1.	Quick Access Toolbar
+	2.	File Tab
+	3.	Title Bar
+	4.	Control Buttons
+	5.	Menu Bar
+	6.	Ribbon/Toolbar
+	7.	Dialog Box Launcher
+	8.	Name Box
+	9.	Formula Bar
+	10.	Scroll Bars
+	11.	Spreadsheet Area
+	12.	Leaf Bar
+	13.	Column Bar
+	14.	Row Bar Cells
+	15.	Cells
+	16.	Status Bar
+	17.	View Buttons
+	18.	Zoom contr
+1. Quick Access Toolbar
+This toolbar is located in the upper left corner of the screen. Its objective is to show the most frequently used Excel commands. We can customize this toolbar based on our preferred commands
+2. File Tab
+Excel 2007's Office button has been replaced by the File tab. We can click it to check the Backstage view, where we can open or save files, create new sheets, print sheets, and perform other file-related operations.
+3. Title Bar
+The title bar of the spreadsheet is at the top of the window. It displays the active document's name.
+4. Control Buttons
+Control buttons are the symbols that are present in the upper-right side of the window, enabling us to change the labels, minimize, maximize, share, and close the sheet.
+5. Menu Bar
+Under the diskette or save icon or the excel icon (this will depend on the version of the program), labels or bars which enable changing the sheet which is shown. These are the menu bar and contain a File, Insert, Page Layout, Formulas, Data, Review, View, Help, and a Search Bar with a light bulb icon. These menus are divided into subcategories which simplify the distribution of information and analysis of calculations.
+
+
+
+2) Write down the various applications of Excel in the industry.
+Ans. The main uses of Excel include:
+	·	Data entry.
+	·	Data management.
+	·	Accounting.
+	·	Financial analysis.
+	·	Charting and graphing.
+	·	Programming.
+	·	Time management.
+	·	Task management.
+
+3) Make a list of different shortcut keys that are only connected to
+formatting with their functions.. 
+Ans. Ctrl + R: Aligns the line or selected text to the right of the screen. Ctrl + M: Indent the paragraph. Ctrl + Shift + F: Change the font. Ctrl + Shift + >: Increase selected font +1pts up to 12pt and then increases font +2pts. 
+
+4) What distinguishes Excel from other analytical tools?
+Ans. One can do a lot of things with Excel: modeling, visualization, reports, dynamic charts, etc. It can help you understand the meaning of many operations before further learning other tools (such as Python and R). 
+
+5) What is a shortcut to merge two or more cells in excel?
+Ans. To merge cells in Excel, you can use the following shortcut keys: Ctrl + M - This shortcut key will merge the selected cells into one cell. Ctrl + Shift + M - This shortcut key will merge the selected cells into one cell, and keep the data in the upper-leftmost cell. 
+
+6) How do you use text commands in Excel?
+Ans.Select the column, or range where you'll be putting the values, then use CTRL+1 to bring up the Format > Cells dialog and on the Number tab select Text. Now Excel will keep your leading 0's. If you've already entered data and Excel has removed your leading 0's, you can use the TEXT function to add them back. 
+
+
+
