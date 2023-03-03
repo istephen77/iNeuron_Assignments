@@ -1,0 +1,18 @@
+1) How many types of conditions are available in conditional formatting on Excel?
+Ans. There are 5 types of conditional formatting visualizations available: Background Color Shading (of cells) Foreground Color Shading (of fonts) Data Bars. 
+
+2) How to insert border in Excel with Format Cells dialog?
+Ans. Click Home > the Borders arrow, and then pick the border option you want. Add a border line style - Click the Borders arrow > Border Style, and then pick a line style option. 
+
+3) How to Format Numbers as Currency in Excel?
+Ans. To quickly apply the Currency format, select the cell or range of cells that you want to format, and then press Ctrl+Shift+$. Like the Currency format, the Accounting format is used for monetary values. But, this format aligns the currency symbols and decimal points of numbers in a column. 
+
+4. What are the steps to format numbers in Excel with the Percent style?
+Ans. On the Home tab, in the Number group, click the icon next to Number to display the Format Cells dialog box. In the Format Cells dialog box, in the Category list, click Percentage. 
+
+5) What is a shortcut to merge two or more cells in excel?
+Ans. To merge cells in Excel, you can use the following shortcut keys: Ctrl + M - This shortcut key will merge the selected cells into one cell. Ctrl + Shift + M - This shortcut key will merge the selected cells into one cell, and keep the data in the upper-leftmost cell. 
+
+6) How do you use text commands in Excel?
+Ans.Select the column, or range where you'll be putting the values, then use CTRL+1 to bring up the Format > Cells dialog and on the Number tab select Text. Now Excel will keep your leading 0's. If you've already entered data and Excel has removed your leading 0's, you can use the TEXT function to add them back. 
+
