@@ -1,0 +1,48 @@
+1) What are the different margins options and do we adjust the margins of
+the excel worksheet?
+Ans. There are four margins you can specify: top, bottom, left, and right. Each margin refers to the distance from the edge of the paper to where the information in your worksheet can be printed
+
+2) What is freeze panes and why do we use freeze panes? Give
+Examples
+Ans. To keep an area of a worksheet visible while you scroll to another area of the worksheet, go to the View tab, where you can Freeze Panes to lock specific rows and columns in place, or you can Split panes to create separate windows of the same worksheet. 
+
+3) What are the different options available within the Freeze Panes
+command?
+Ans.  It shows three options in the Freeze Panes drop-down:
+	·	Freeze Panes: It freezes the rows as well as the columns.
+	·	Freeze Top Row: It freezes all the rows above the active cell.
+	·	Freeze First Column: It freezes all the columns to the left of the active cell.
+
+4) Is there a need to change the height and width in a cell? Why?
+Ans. It is necessary to change width and height in excel to fit the data. Excel by default provide equal width and height with respect to columns and rows. Whenever we enter a lengthy data, few characters will get displayed and other will be present inside the cell but will be hidden to the user 
+
+
+5) Explain what the different sheet options present in excel are and what
+they do?
+Ans. Ribbon Sheet Options
+	·	Right-click Sheet Options
+Let us discuss each in detail:
+Ribbon Sheet Options
+Excel has all the basic and advanced options present on its ribbon. Likewise, some quick sheet options are also present on the Excel ribbon and can be accessed by going to Page Layout > Sheet Options. It mainly has four toggle options: two for Gridlines and two for Headings, and they can be turned on and off by selecting and deselecting the checkboxes.
+Gridlines:
+View: This option allows users to show/ hide gridlines within the active worksheet. Turning off this option removes the gridlines from the sheet and displays a blank Excel sheet.
+Print: This option allows users to show/ hide gridlines on an Excel document that will be printed on paper.
+
+Headings:
+View: This option allows users to show/ hide headings within the active worksheet. Turning off this option removes the headings from the current sheet's headers and footers.
+Print: This option allows users to show/ hide headings on an Excel document, which is to be printed on paper.
+
+Right-click Sheet Options
+In Excel, the right-click with mouse button usually displays the context menu for the selected element. When we press the right-click on any Sheet tabs, Excel displays a list of options relevant to Excel sheets. The list includes various sheet options. However, this list is usually called the 'worksheet menu'.
+
+Insert
+While working on Excel, we may sometimes need more sheets. For this, we need to go to the Sheet options by right-clicking the worksheet name on the sheet tab, then select Insert from the list. As soon as we click the Insert, the new blank worksheet will appear in the current workbook.
+
+Delete
+Excel also allows us to delete the undesired sheets from the workbooks. For instance, suppose that we only want to organize our data in a single sheet, then deleting the remaining sheets will give a professional and clean look to our workbook.
+Rename
+Whenever we create a new Excel workbook, we usually get three excel sheets with default names, Sheet1, Sheet2, and Sheet3. Also, if we insert a new sheet, Excel follows the same order and inserts new sheets with names like Sheet4, Sheet5, etc. However, we can rename any worksheet and change the default sheet name to any desired name to better reflect its content.
+Move or Copy
+When we need to duplicate the data from one sheet to another in Excel, we can use the Move and Copy option from the right-click sheet options list. We must first right-click on the sheet that we wish to copy and then select the 'Move and Copy' option.
+
+
