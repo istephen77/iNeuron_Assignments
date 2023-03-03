@@ -1,0 +1,60 @@
+1. What do you mean by cells in an excel sheet?
+Ans : Cell is a rectangular box which occurs at the intersection of a vertical column and a horizontal row in excel worksheet.
+Explanation:
+Cell is a rectangular box occuring at the intersection of a vertical column and a horizontal row in excel worksheet.
+Vertical columns are the ones that are numbered with alphabetic values such as A, B, C, D.
+Horizontal rows the ones those are numbered with numeric values such as 1, 2, 3, 4, 5
+The main difference between columns and rows is that a column arranges data vertically from top to bottom and a row arranges data horizontally from left to right.
+
+2. How can you restrict someone from copying a cell from your worksheet?
+Ans: Yes, it is possible. In order to protect your worksheet from getting copied, you need to go into Menu bar >Review > Protect sheet > Password. By entering the password, you can secure your worksheet from getting copied by others. 
+
+3. How to move or copy the worksheet into another workbook?
+Ans : There are two main ways to copy a sheet to another workbook on a PC: 
+	1)	Open both spreadsheets 
+      2) Right-click on the sheet you want to move. 
+      3) Click “Move or Copy.” 
+      4) Click on the “To book” dropdown menu and find the workbook you want this sheet to move to. 
+      5) Select the “Create a copy” checkbox at the bottom of the window. 
+      6) Click “OK.” 
+Second : 1) Open both spreadsheets. 
+	    2) Click and drag the sheet you want to move to the other workbook. 
+    3) Click and hold “CTRL” before releasing the sheet.
+ 	    4) The copy will appear.
+
+4. Which key is used as a shortcut for opening a new window document?
+Ans: Ctrl + N
+
+5. What are the things that we can notice after opening the Excel interface?
+Ans:  The key components are as follows:
+Title Bar – contains the name of the workbook. The default is Book1 (and then Book2, etc.). This is replaced by the filename once the Excel workbook is saved.
+Worksheet Tabs – a list of all the worksheets in the workbook. By default, these are labeled Sheet1, Sheet2, etc. You can navigate to any worksheet in the workbook by clicking on that worksheet tab.  
+
+Ribbon Tabs – the top-level menu items. In the example above this consists of Home, Insert, Page Layout, Formulas, etc. The actual choices can change depending on the state that you are in. To access most capabilities in Excel you click on one of these ribbon tabs 
+
+Ribbon – a collection of Excel capabilities organized into groups corresponding to some ribbon tab. For example, the Home ribbon displayed in Figure 1  is organized into the Clipboard, Font, Alignment, Number, etc. groups. Each group consists of one or more icons corresponding to some capabilities in Excel. 
+
+Office Button – the icon in the upper left side of the Excel 2007 interface that allows you to open, save and print workbooks. When you click on this icon you will be presented with a menu of options. In addition to opening, saving and printing workbooks, there is a button called Excel Options.  
+
+Quick Access Toolbar – contains frequently used icons and is located in the upper left-hand corner of the display (just to the right of the Office Button in Excel 2007 and above the File and Home tabs in versions of Excel starting with Excel 2010). 
+
+Active Cell – displays the currently referenced cell. This is the cell that you last clicked on with the mouse or moved to. This cell is highlighted on the display.
+Name Box – contains the address of the active cell. You can navigate to another cell simply by entering the address of that cell in the Name Box and pressing the Enter key.
+Formula Bar – contains the contents of the active cell. When this is a formula, the formula appears here while the value of the formula appears in the cell. 
+Vertical/Horizontal Split Controls – used to split the worksheet. The vertical split control is a small rectangular box located just above the vertical scroll bar. If you move the control downward, the display of the worksheet splits in two so that you can see two different parts of the worksheet at the same time.
+ 
+Status Bar – contains certain information, including by default the sum, count and average of any highlighted range. It also contains the zoom and zoom slider, which are used to increase or decrease the size of the worksheet display.  
+
+6. When to use a relative cell reference in excel?
+Ans: Relative references are especially convenient whenever you need to repeat the same calculation across multiple rows or columns. 
+
+
+
+
+
+
+
+
+
+
+
