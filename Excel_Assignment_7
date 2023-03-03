@@ -1,0 +1,32 @@
+1) What are the different ways you can select columns and rows?
+Ans. Select one or more rows and columns
+	·	Select the letter at the top to select the entire column. Or click on any cell in the column and then press Ctrl + Space.
+	·	Select the row number to select the entire row. ...
+	·	To select non-adjacent rows or columns, hold Ctrl and select the row or column numbers.
+
+2) What is AutoFit and why do we use it?
+Ans.Excel's AutoFit feature is designed to automatically resize cells in a worksheet to accommodate different sized data without having to manually change the column width and row height. AutoFit Column Width - changes the column width to hold the largest value in the column. 
+
+3) How can you insert new rows and columns into the existing table?
+Ans) Add a row or column
+	1.	Click where you want in your table to add a row or column and then click the Layout tab (this is the tab next to the Table Design tab on the ribbon).
+	2.	To add rows, click Insert Above or Insert Below and to add columns, click Insert Left or Insert Right.
+
+4) How do you hide and unhide columns in excel?
+Ans. On the Home tab, in the Cells group, click Format. Do one of the following: Under Visibility, click Hide & Unhide, and then click Unhide Rows or Unhide Columns. 
+
+
+5) What is the keyboard shortcut to unhide rows?
+Ans. If you want to unhide the rows, you can use the same keyboard shortcuts, but with the Shift key included. For example, to unhide rows that have been hidden with the first shortcut (Ctrl+9), you would press Ctrl+Shift+9. 
+
+6) How to hide rows containing blank cells?
+Ans. How to hide rows containing blank cells
+	1.	Select the range that contains empty cells you want to hide.
+	2.	On the Home tab, in the Editing group, click Find & Select > Go To Special.
+	3.	In the Go To Special dialog box, select the Blanks radio button, and click OK. ...
+	4.	Press Ctrl + 9 to hide the corresponding rows.
+
+
+
+
+
