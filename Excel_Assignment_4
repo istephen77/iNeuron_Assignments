@@ -1,0 +1,32 @@
+1) To use the ribbon commands, what menu and grouping of commands will you
+find the Insert and Delete command?
+Ans. There are six main categories for commands: one-click, toggle, split buttons, drop-down and tick box.  Categories can be mixed so it is useful to understand the basics to develop your Excel skills. 
+
+
+2) If you set a row height or column width to 0 (zero), what happens to the row and
+column?
+Ans. It sets to the default width or height. 
+
+3) Is there a need to change the height and width in a cell? Why?
+Ans. It is necessary to change width and height in excel to fit the data. Excel by default provide equal width and height with respect to columns and rows. Whenever we enter a lengthy data, few characters will get displayed and other will be present inside the cell but will be hidden to the user 
+
+4) What is the keyboard shortcut to unhide rows?
+Ans. If you want to unhide the rows, you can use the same keyboard shortcuts, but with the Shift key included. For example, to unhide rows that have been hidden with the first shortcut (Ctrl+9), you would press Ctrl+Shift+9. 
+
+5) How to hide rows containing blank cells?
+Ans. How to hide rows containing blank cells
+	1.	Select the range that contains empty cells you want to hide.
+	2.	On the Home tab, in the Editing group, click Find & Select > Go To Special.
+	3.	In the Go To Special dialog box, select the Blanks radio button, and click OK. ...
+	4.	Press Ctrl + 9 to hide the corresponding rows.
+
+6) What are the steps to hide the duplicate values using conditional formatting in
+excel?
+Ans. Filter for unique values or remove duplicate values
+	1.	To filter for unique values, click Data > Sort & Filter > Advanced.
+	2.	To remove duplicate values, click Data > Data Tools > Remove Duplicates.
+	3.	To highlight unique or duplicate values, use the Conditional Formatting command in the Style group on the Home tab.
+
+
+
+
