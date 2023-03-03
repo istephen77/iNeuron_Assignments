@@ -1,0 +1,48 @@
+1. What does the dollar($) sign do?
+Ans : The dollar sign fixes the reference to a given cell, so that it remains unchanged no matter where the formula moves. In other words, using $ in cell references allows you to copy the formula in Excel without changing references.
+
+2. How to Change the Reference from Relative to Absolute (or Mixed)?
+Ans:  Switch between relative, absolute, and mixed references
+	1)	Select the cell that contains the formula.
+      2) In the formula bar. , select the reference that you want to change.
+      3) Press F4 to switch between the reference types.
+
+3) Explain the order of operations in excel?
+Ans: When evaluating a formula, Excel follows a standard math protocol called "order of operations". In general, Excel's order of operation follows the acronym PEMDAS (Parentheses, Exponents, Multiplication, Division, Addition, Subtraction) but with some customization to handle the formula syntax in a spreadsheet.  
+First, any expressions in parentheses are evaluated. Parentheses essentially override the normal order of operations to ensure certain operations are performed first.
+Next, Excel will resolve references. This involves replacing cell references like A1 with the value from the cell, as well as evaluating range references like A1:A5, which become arrays of values. Other range operations like union (comma) and intersection (space) also happen at this time.
+Next, Excel will perform exponentiation, negation, and percent conversions (in that order), followed by multiplication and division, addition and subtraction, and concatenation. Finally, Excel will evaluate logical operators, if present.
+In summary, Excel solves formulas in the following order:
+	1.	Parentheses
+	2.	Reference operators
+	3.	Exponents
+	4.	Negation
+	5.	Percent
+	6.	Multiplication and Division
+	7.	Addition and Subtraction
+	8.	Concatenation
+	9.	Logical operators
+
+4) What, according to you, are the top 5 functions in excel and write a basic syntax for any of two?
+Ans : 
+The most frequently used functions in Excel are:
+	·	AutoSum;
+	·	IF function;
+	·	LOOKUP function;
+	·	VLOOKUP function;
+	·	HLOOKUP function;
+	·	MATCH function;
+	·	CHOOSE function;
+	·	DATE function;
+
+The VLookup formula is “=VLOOKUP” (lookup_value, table_array, col_index_num, *range_lookup*). 
+
+The syntax formula for the average function is “AVERAGE” (number1, number2, etc.). 
+
+5)  When would you use the subtotal function?
+Ans. The SUBTOTAL function is designed for columns of data, or vertical ranges. It is not designed for rows of data, or horizontal ranges. For example, when you subtotal a horizontal range using a function_num of 101 or greater, such as SUBTOTAL(109,B2:G2), hiding a column does not affect the subtotal. 
+
+6) What is the syntax of the vlookup function? Explain the terms in it?
+Ans. The VLookup formula is “=VLOOKUP” (lookup_value, table_array, col_index_num, *range_lookup*). 
+In its simplest form, the VLOOKUP function says: =VLOOKUP(What you want to look up, where you want to look for it, the column number in the range containing the value to return, return an Approximate or Exact match – indicated as 1/TRUE, or 0/FALSE). 
+
