@@ -1,0 +1,22 @@
+1) What do you mean by AutoComplete feature in Excel and what are the
+benefits of using this feature?
+Ans. AutoComplete helps you quickly insert functions and arguments while minimizing typing and syntax errors. The AutoComplete menu shows you available options based on context, and you choose what you want to insert into your formula. 
+
+2) Explain working with workbooks and working with cells.
+Ans. A workbook is a spreadsheet program file that you create in Excel. A workbook contains one or more worksheets. A worksheet (also known as a spreadsheet) consists of cells in which you can enter and calculate data. The cells are organized into columns and rows. 
+
+3) What is fill handle in Excel and why do we use it?
+Ans. You can quickly copy formulas into adjacent cells by using the fill handle. When you drag the handle to other cells, Excel will show different results for each cell. 
+
+4) Give some examples of using the fill handle.
+Ans.'Fill Handle' is a tool that you can use to autocomplete lists in Excel. For example, if you have to enter numbers 1 to 20 in cell A1:A20, instead of manually entering each number, you can simply enter the first two numbers and use the fill handle to do the rest. 
+
+5) Describe flash fill and what the different ways to access the flash fill are.
+Ans. Flash Fill automatically fills your data when it senses a pattern. For example, you can use Flash Fill to separate first and last names from a single column, or combine first and last names from two different columns. Note: Flash Fill is only available in Excel 2013 and later. 
+
+6)  When would you use the subtotal function?
+Ans. The SUBTOTAL function is designed for columns of data, or vertical ranges. It is not designed for rows of data, or horizontal ranges. For example, when you subtotal a horizontal range using a function_num of 101 or greater, such as SUBTOTAL(109,B2:G2), hiding a column does not affect the subtotal. 
+
+
+
+
