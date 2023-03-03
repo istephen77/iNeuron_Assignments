@@ -1,0 +1,32 @@
+1) How and when to use the AutoSum command in excel?
+Ans. Autosum is a very handy tool in Excel to sum cells very fast. Autosum adds up a range of numbers automatically and places the result in a nearby cell. To perform Autosum, click a nearby cell and click Autosum on the Home tab and press Enter.
+
+2) What is the shortcut key to perform AutoSum?
+Ans. Alt +=
+
+3. How do you get rid of Formula that omits adjacent cells?
+Ans. To Uncheck formulas that omit cells :
+Launch your Excel sheet and then click on File. Navigate to Options and then select Formulas. Look for Error checking rules and uncheck Formulas which omit cells in a region. Click OK.
+
+4)  How do you select non-adjacent cells in Excel 2016?
+	1.	Ans. With your mouse, click the first cell you want to highlight. This cell becomes the active cell.
+
+	2.	Press and hold the Ctrl key on the keyboard.
+
+	3.	Click the rest of the cells you want to highlight.
+
+	4.	Once the desired cells are highlighted, release the Ctrl key.
+
+	5.	Do not click anywhere else with the mouse pointer once you release the Ctrl key or you will clear the highlight from the selected cells.
+
+	6.	If you release the Ctrl key too soon and wish to highlight more cells, press and hold the Ctrl key again and click the additional cell(s).
+
+
+5) What happens if you choose a column, hold down the Alt key and press the letters ocw in quick succession?
+Ans.  The contents of the first cell in the selected column will be replaced with the letters 'O-C-W' 
+
+6. If you right-click on a row reference number and click on Insert, where will the row be added?
+Ans. A new row is inserted above the cell(s) you originally selected. 
+
+
+
